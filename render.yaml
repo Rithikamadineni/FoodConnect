@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: foodconnect-backend
+    runtime: java
+    rootDir: backend/foodconnect
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
